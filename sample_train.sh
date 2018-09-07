@@ -1,7 +1,7 @@
-curl -LO http://download.tensorflow.org/example_images/flower_photos.tgz
-tar xzf flower_photos.tgz
-rm -rf flower_photos/LICENSE*
-echo "Dataset Downloaded and extracted! Ready for Training!"
+#curl -LO http://download.tensorflow.org/example_images/flower_photos.tgz
+#tar xzf flower_photos.tgz
+#rm -rf flower_photos/LICENSE*
+#echo "Dataset Downloaded and extracted! Ready for Training!"
 
 python3 train_val_split.py --dataset flower_photos --val_split 0.2
 echo "Training and Validation Set created"
